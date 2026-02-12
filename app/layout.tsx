@@ -18,9 +18,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Drake Bartolai | Developer Portfolio",
+  title: "Drake Bartolai",
   description:
-    "A creative portfolio highlighting work experience, technical projects, coursework, and multimedia blog posts.",
+    "A portfolio highlighting work experience, technical projects, coursework, and blog posts.",
 };
 
 export default function RootLayout({
