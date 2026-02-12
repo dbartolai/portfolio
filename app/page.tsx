@@ -14,11 +14,12 @@ export default function Home() {
             Developer Portfolio
           </p>
           <h1 className="mt-4 max-w-xl font-serif text-5xl leading-tight">
-            Building thoughtful products at the intersection of systems and UI.
+            Hi, I'm Drake
           </h1>
           <p className="mt-5 max-w-2xl font-sans text-lg leading-8 text-foreground/80">
-            I design and ship software that balances reliability, performance, and craft.
-            Explore my work experience timeline, technical projects, coursework deep-dives, and multimedia blog.
+            Currently, I study computer engineering at the University of Illinois. <br/>
+            My plan is to graduate in May 2027 and pursue a career in software engineering, technology consulting, or entrepreneurship.<br/>
+            Right now I'm developing my latest project, ceria, and sharing about it here.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -37,13 +38,13 @@ export default function Home() {
         </div>
 
         <aside className="rounded-2xl border border-foreground/10 bg-card p-6">
-          <h2 className="font-serif text-2xl">Quick map</h2>
+          <h2 className="font-serif text-2xl">Explore</h2>
           <ul className="mt-4 space-y-2">
             {[
-              ["Work Timeline", "/work"],
+              ["Work Experience", "/work"],
               ["Technical Projects", "/projects"],
               ["Relevant Coursework", "/coursework"],
-              ["Multimedia Blog", "/blog"],
+              ["Blog", "/blog"],
             ].map(([label, href]) => (
               <li key={href}>
                 <Link
@@ -74,7 +75,7 @@ export default function Home() {
           <h2 className="mt-2 font-serif text-3xl">{featuredPost.title}</h2>
           <p className="mt-3 font-sans text-foreground/80">{featuredPost.excerpt}</p>
           <Link href={`/blog/${featuredPost.slug}`} className="mt-4 inline-block font-sans text-sm underline">
-            Open post
+            Read post
           </Link>
         </article>
       </section>

@@ -1,48 +1,28 @@
 [
   {
-    "id": "post-systems-thinking",
-    "slug": "systems-thinking-for-frontends",
-    "title": "Systems Thinking for Frontend Engineers",
-    "excerpt": "Treating frontend apps like distributed systems changed how I debug, design, and prioritize reliability.",
-    "publishedAt": "2026-01-12",
-    "readTime": "7 min read",
-    "tags": ["Frontend", "Architecture", "Reliability"],
+    "id": "ceria-idea",
+    "slug": "ceria-idea",
+    "title": "My Idea for Ceria",
+    "excerpt": "How I decided to build out one application for everything I need.",
+    "publishedAt": "February 11, 2026",
+    "readTime": "5 min read",
+    "tags": [
+      "Ideas",
+      "Projects",
+      "Software"
+    ],
     "coverImage": "https://picsum.photos/seed/blog-systems-cover/1400/780",
-    "markdown": "When UI feels flaky, the root cause is often **coordination**, not styling.\\n\\n## A better framing\\n\\nI started modeling async UI flows as independent services with contracts, retries, and observability.\\n\\n## Practical playbook\\n\\n1. Define state transitions explicitly\\n2. Add event-level logging early\\n3. Fail loudly in development\\n\\n## Result\\n\\nDebug cycles became shorter and regressions became easier to isolate.",
+    "markdown": "### Intro:\n---\nI had this *brilliant* idea for an application that handles all of my life for me\n\n\nIt should be able to:\n- Have different *spaces* for all of my needs\n- Each space should contain tasks for me\n- Each space can be like a separate learning zone, with spaced repetition learning activities\n- I could also have a space for a project, which should let me store passwords and break down tasks\n\n### Core feature:\n---\nA big thing for me is balancing my physical journal with digital task apps. I decided that ceria will incorporate both into one system. At the end of each day, I can create a *specialized journal prompt* to internalize everything I've learned/accomplished that day.\n\n### Agent:\n---\nThis application will have an AI agent that works through all of your spaces, inspired by Arc browser or spotlight search. A floating bar will allow you to interface with everything, everywhere.\n\n### Tutoring:\n---\nAs a long-time educator, I really want to embed features that help me with that work as well. Each space will allow users to add mentors/instructors, who will be able to access your own guided learning plan. They can assign specific activities, view your progress, and deliver directed lessons.",
     "images": [
       {
         "src": "https://picsum.photos/seed/blog-systems-1/1200/700",
-        "alt": "Notebook sketch of event flow"
+        "alt": "Random Pic"
       }
     ],
     "videos": [
       {
-        "title": "Lightning Talk Clip",
+        "title": "Lazy Song",
         "url": "https://www.youtube.com/embed/fLexgOxsZu0",
-        "type": "embed"
-      }
-    ]
-  },
-  {
-    "id": "post-ship-fast",
-    "slug": "shipping-cleanly-under-deadlines",
-    "title": "Shipping Cleanly Under Real Deadlines",
-    "excerpt": "A workflow for balancing speed and code quality during intense project windows.",
-    "publishedAt": "2025-11-03",
-    "readTime": "5 min read",
-    "tags": ["Productivity", "Engineering Process", "TypeScript"],
-    "coverImage": "https://picsum.photos/seed/blog-deadline-cover/1400/780",
-    "markdown": "Deadlines are normal. Panic is optional.\\n\\n## Rules I follow\\n\\n- Establish a tiny, testable core first\\n- Keep complexity behind stable interfaces\\n- Cut polish, never clarity\\n\\n```ts\\nexport function shipScope(items: string[]) {\\n  return items.filter((item) => !item.startsWith('nice-to-have:'));\\n}\\n```\\n\\nThe key is to preserve confidence while trimming scope.",
-    "images": [
-      {
-        "src": "https://picsum.photos/seed/blog-deadline-1/1200/700",
-        "alt": "Kanban board for sprint planning"
-      }
-    ],
-    "videos": [
-      {
-        "title": "Project Retrospective Montage",
-        "url": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
         "type": "embed"
       }
     ]

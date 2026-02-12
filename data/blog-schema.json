@@ -1,0 +1,24 @@
+{
+    "id": "post-ship-fast",
+    "slug": "shipping-cleanly-under-deadlines",
+    "title": "Shipping Cleanly Under Real Deadlines",
+    "excerpt": "A workflow for balancing speed and code quality during intense project windows.",
+    "publishedAt": "2025-11-03",
+    "readTime": "5 min read",
+    "tags": ["Productivity", "Engineering Process", "TypeScript"],
+    "coverImage": "https://picsum.photos/seed/blog-deadline-cover/1400/780",
+    "markdown": "Deadlines are normal. Panic is optional.\n\n## Rules I follow\n\n- Establish a tiny, testable core first\n- Keep complexity behind stable interfaces\n- Cut polish, never clarity\n\n```ts\nexport function shipScope(items: string[]) {\n  return items.filter((item) => !item.startsWith('nice-to-have:'));\n}\n```\n\nThe key is to preserve confidence while trimming scope.",
+    "images": [
+      {
+        "src": "https://picsum.photos/seed/blog-deadline-1/1200/700",
+        "alt": "Kanban board for sprint planning"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Project Retrospective Montage",
+        "url": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+        "type": "embed"
+      }
+    ]
+  }
