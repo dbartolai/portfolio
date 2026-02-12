@@ -1,62 +1,83 @@
+
 [
   {
-    "id": "distributed-systems",
-    "slug": "distributed-systems-lab",
-    "course": "Distributed Systems Lab",
-    "institution": "State University",
-    "term": "Spring 2025",
-    "summary": "Designed fault-tolerant services and explored consistency tradeoffs through team labs.",
-    "topics": ["Consensus", "Replication", "Failure Recovery", "Observability"],
-    "markdown": "## Course focus\n\nThis course emphasized practical system behavior under unreliable network conditions.\n\n## Key coursework artifact\n\nOur final lab implemented a mini key-value store with leader election and replica reconciliation.\n\n## Reflection\n\nIt strengthened my ability to reason about eventual consistency and performance under failure scenarios.",
-    "images": [
-      {
-        "src": "https://picsum.photos/seed/distributed-1/1280/720",
-        "alt": "Cluster simulation dashboard"
-      }
+    "id": "ece-391-operating-systems",
+    "slug": "ece-391-operating-systems",
+    "course": "Computer Systems Engineering (Operating Systems)",
+    "institution": "University of Illinois Urbana-Champaign",
+    "term": "Fall 2025",
+    "summary": "Built and debugged core OS subsystems with a focus on systems programming, interfaces, and performance under real constraints.",
+    "topics": [
+      "Kernel Design",
+      "Processes & Scheduling",
+      "Virtual Memory",
+      "File Systems",
+      "Device I/O"
     ],
-    "videos": [
-      {
-        "title": "Fault Injection Demo",
-        "url": "https://www.youtube.com/embed/5NV6Rdv1a3I",
-        "type": "embed"
-      }
-    ],
-    "codeSamples": [
-      {
-        "filename": "replica-manager.ts",
-        "language": "typescript",
-        "code": "type ReplicaState = { nodeId: string; lagMs: number };\\n\\nexport function pickPrimary(replicas: ReplicaState[]): ReplicaState | null {\\n  if (replicas.length === 0) return null;\\n  return replicas.reduce((best, next) => (next.lagMs < best.lagMs ? next : best));\\n}\\n"
-      }
-    ]
+    "markdown": "## Course focus\n\nHands-on OS engineering: implementing and reasoning about kernel-level mechanisms, hardware interfaces, and system behavior under load.\n\n## What I built\n\nIncremental OS components (process, memory, and I/O paths) with heavy emphasis on debugging and correctness.\n\n## Reflection\n\nSharpened my ability to trace failures across layers (user space → kernel → hardware boundary) and write resilient low-level code."
   },
   {
-    "id": "human-computer-interaction",
-    "slug": "hci-studio",
-    "course": "Human-Computer Interaction Studio",
-    "institution": "State University",
-    "term": "Fall 2024",
-    "summary": "Prototyped and tested interfaces with an emphasis on inclusive design and usability metrics.",
-    "topics": ["User Research", "Wireframing", "Accessibility", "Usability Testing"],
-    "markdown": "## Studio output\n\nBuilt and iterated on a campus navigation app for first-year students with low-vision accessibility requirements.\n\n## Testing\n\nRan moderated usability sessions and synthesized findings into design updates.\n\n## What changed in my process\n\nI now validate assumptions earlier and use measurable usability goals before polishing visuals.",
-    "images": [
-      {
-        "src": "https://picsum.photos/seed/hci-1/1280/720",
-        "alt": "HCI app prototype screens"
-      }
+    "id": "cs-446-machine-learning",
+    "slug": "cs-446-machine-learning",
+    "course": "Machine Learning",
+    "institution": "University of Illinois Urbana-Champaign",
+    "term": "Spring 2026",
+    "summary": "Studied core ML methods and evaluation, focusing on how model assumptions, loss functions, and data properties drive performance.",
+    "topics": [
+      "Supervised Learning",
+      "Generalization",
+      "Regularization",
+      "Optimization",
+      "Model Evaluation"
     ],
-    "videos": [
-      {
-        "title": "Usability Test Highlights",
-        "url": "https://www.youtube.com/embed/kJQP7kiw5Fk",
-        "type": "embed"
-      }
+    "markdown": "## Course focus\n\nCore machine-learning foundations: modeling choices, objective functions, training dynamics, and rigorous evaluation.\n\n## What I practiced\n\nTranslating problem statements into formal objectives and choosing models based on bias/variance and data constraints.\n\n## Reflection\n\nImproved my ability to reason about why models fail (not just that they fail) and how to iterate systematically."
+  },
+  {
+    "id": "ece-313-probability",
+    "slug": "ece-313-probability",
+    "course": "Probability with Engineering Applications",
+    "institution": "University of Illinois Urbana-Champaign",
+    "term": "Fall 2025",
+    "summary": "Developed probabilistic modeling intuition and computation skills for engineering problems, from random variables to limit theorems.",
+    "topics": [
+      "Random Variables",
+      "Joint Distributions",
+      "Conditional Probability",
+      "Expectation & Variance",
+      "LLN & CLT"
     ],
-    "codeSamples": [
-      {
-        "filename": "focus-trap.ts",
-        "language": "typescript",
-        "code": "export function getFocusable(root: HTMLElement): HTMLElement[] {\\n  const selector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])';\\n  return Array.from(root.querySelectorAll<HTMLElement>(selector)).filter((el) => !el.hasAttribute('disabled'));\\n}\\n"
-      }
-    ]
+    "markdown": "## Course focus\n\nProbability as a modeling toolkit: turning real systems into random variables and computing actionable quantities.\n\n## Key skills\n\nWorking fluently with joint/conditional structure and recognizing when approximations (e.g., CLT) are appropriate.\n\n## Reflection\n\nMade me faster at translating messy scenarios into clean probabilistic objects and assumptions."
+  },
+  {
+    "id": "digital-systems-verilog",
+    "slug": "digital-systems-verilog",
+    "course": "Digital Systems Laboratory",
+    "institution": "University of Illinois Urbana-Champaign",
+    "term": "Spring 2026",
+    "summary": "Designed and verified digital logic systems using SystemVerilog HDL workflows in Vivado with AMD Xilinx FPGAs.",
+    "topics": [
+      "Finite State Machines",
+      "Combinational & Sequential Logic",
+      "SystemVerilog HDL",
+      "Timing & Constraints",
+      "Hardware Debugging"
+    ],
+    "markdown": "## Course focus\n\nBuilding reliable digital components end-to-end: design, simulation, verification, and iteration against constraints.\n\n## What I built\n\nFSM-driven modules and integrated logic blocks with an emphasis on testability.\n\n## Reflection\n\nStrengthened my ability to think in discrete-time systems and validate designs through structured testbenches."
+  },
+  {
+    "id": "high-frequency-trading-systems",
+    "slug": "high-frequency-trading-systems",
+    "course": "High-Frequency Trading)",
+    "institution": "University of Illinois Urbana-Champaign",
+    "term": "Spring 2026",
+    "summary": "Explored low-latency trading systems and the engineering tradeoffs behind market data, execution, and infrastructure performance.",
+    "topics": [
+      "Low-Latency Systems",
+      "Market Microstructure",
+      "Performance Engineering",
+      "Data Pipelines",
+      "Backtesting & Risk"
+    ],
+    "markdown": "## Course focus\n\nSystems-first trading: performance constraints, reliable pipelines, and measuring tradeoffs from data ingestion to execution.\n\n## What I practiced\n\nThinking rigorously about latency budgets, throughput, and the quality/limits of signals.\n\n## Reflection\n\nReinforced an engineering approach to finance: quantify assumptions, test aggressively, and optimize the right bottleneck."
   }
 ]
