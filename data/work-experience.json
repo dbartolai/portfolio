@@ -1,0 +1,54 @@
+[
+  {
+    "id": "west-monroe-incoming",
+    "company": "West Monroe",
+    "role": "Technology Consulting Intern",
+    "location": "Chicago, IL",
+    "startDate": "2026-06",
+    "endDate": "2026-08",
+    "summary": "Incoming intern.",
+    "highlights": []
+  },
+  {
+    "id": "id-tech-camps",
+    "company": "iD Tech Camps",
+    "role": "Lead Instructor",
+    "location": "Lake Forest, IL",
+    "startDate": "2025-06",
+    "endDate": "2025-08",
+    "summary": "Led instructional teams and delivered hands-on STEM curriculum for large student cohorts in programming and robotics.",
+    "highlights": [
+      "Led a team of 6 instructors while coordinating daily operations for programs serving 200+ students ages 10–17.",
+      "Taught hands-on courses in Python, C++, and robotics to strengthen students’ programming and engineering fundamentals.",
+      "Partnered with site leadership to improve parent satisfaction and optimize the overall student experience."
+    ]
+  },
+  {
+    "id": "uiuc-physics-la",
+    "company": "University of Illinois Physics Department",
+    "role": "Learning Assistant, PHYS 212",
+    "location": "Champaign, IL",
+    "startDate": "2024-08",
+    "endDate": "2024-12",
+    "summary": "Supported undergraduate physics labs by guiding students through experiments and improving instructional workflows.",
+    "highlights": [
+      "Facilitated weekly lab sections for 40+ students using electrical and magnetic experimental equipment.",
+      "Provided one-on-one mentoring and served as a communication bridge between students, graduate TAs, and faculty.",
+      "Collected student feedback and conducted interviews that informed department-wide lab structure improvements."
+    ]
+  },
+  {
+    "id": "acannability-intern",
+    "company": "Acannability",
+    "role": "Web Development Intern",
+    "location": "Chicago, IL",
+    "startDate": "2024-04",
+    "endDate": "2024-08",
+    "summary": "Built interactive product features and data-driven UI experiences to improve usability and engagement for a startup platform.",
+    "highlights": [
+      "Engineered an interactive \"periodic table of molecules\" experience to improve readability and engagement across 50+ molecules.",
+      "Designed and shipped product features that improved engagement and readability and supported a $10k fundraising milestone.",
+      "Collaborated directly with founders and executives to align technical delivery with business goals."
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+    {
+      "id": "signalboard",
+      "slug": "signalboard",
+      "name": "Signalboard",
+      "tagline": "Real-time engineering operations cockpit.",
+      "summary": "A monitoring dashboard that unifies logs, release health, and team ownership in a single interface.",
+      "stack": ["Next.js", "TypeScript", "WebSockets", "PostgreSQL", "Tailwind CSS"],
+      "year": "2025",
+      "repoUrl": "https://github.com/example/signalboard",
+      "demoUrl": "https://example.com/signalboard",
+      "markdown": "## Why I built this\n\nTeams kept context-switching between logs, deploy feeds, and runbooks. Signalboard turns those streams into one readable command center.\n\n## Architecture notes\n\n- Event ingestion through a lightweight queue\n- Aggregation service for alert grouping\n- Frontend stream layer for live updates\n\n## What I learned\n\nI improved my data modeling instincts and got comfortable balancing expressive UI with strict performance budgets.",
+      "images": [
+        {
+          "src": "https://picsum.photos/seed/signalboard-1/1280/720",
+          "alt": "Signalboard overview dashboard"
+        },
+        {
+          "src": "https://picsum.photos/seed/signalboard-2/1280/720",
+          "alt": "Incident panel and ownership map"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Signalboard Product Walkthrough",
+          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "type": "embed"
+        }
+      ],
+      "codeSamples": [
+        {
+          "filename": "streaming-client.ts",
+          "language": "typescript",
+          "code": "type StreamMessage = { channel: string; payload: unknown };\\n\\nexport function connectStream(url: string, onMessage: (msg: StreamMessage) => void) {\\n  const socket = new WebSocket(url);\\n\\n  socket.addEventListener('message', (event) => {\\n    const parsed = JSON.parse(event.data) as StreamMessage;\\n    onMessage(parsed);\\n  });\\n\\n  return () => socket.close();\\n}\\n"
+        }
+      ]
+    }
+    
+  ]

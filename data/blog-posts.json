@@ -1,0 +1,50 @@
+[
+  {
+    "id": "post-systems-thinking",
+    "slug": "systems-thinking-for-frontends",
+    "title": "Systems Thinking for Frontend Engineers",
+    "excerpt": "Treating frontend apps like distributed systems changed how I debug, design, and prioritize reliability.",
+    "publishedAt": "2026-01-12",
+    "readTime": "7 min read",
+    "tags": ["Frontend", "Architecture", "Reliability"],
+    "coverImage": "https://picsum.photos/seed/blog-systems-cover/1400/780",
+    "markdown": "When UI feels flaky, the root cause is often **coordination**, not styling.\\n\\n## A better framing\\n\\nI started modeling async UI flows as independent services with contracts, retries, and observability.\\n\\n## Practical playbook\\n\\n1. Define state transitions explicitly\\n2. Add event-level logging early\\n3. Fail loudly in development\\n\\n## Result\\n\\nDebug cycles became shorter and regressions became easier to isolate.",
+    "images": [
+      {
+        "src": "https://picsum.photos/seed/blog-systems-1/1200/700",
+        "alt": "Notebook sketch of event flow"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Lightning Talk Clip",
+        "url": "https://www.youtube.com/embed/fLexgOxsZu0",
+        "type": "embed"
+      }
+    ]
+  },
+  {
+    "id": "post-ship-fast",
+    "slug": "shipping-cleanly-under-deadlines",
+    "title": "Shipping Cleanly Under Real Deadlines",
+    "excerpt": "A workflow for balancing speed and code quality during intense project windows.",
+    "publishedAt": "2025-11-03",
+    "readTime": "5 min read",
+    "tags": ["Productivity", "Engineering Process", "TypeScript"],
+    "coverImage": "https://picsum.photos/seed/blog-deadline-cover/1400/780",
+    "markdown": "Deadlines are normal. Panic is optional.\\n\\n## Rules I follow\\n\\n- Establish a tiny, testable core first\\n- Keep complexity behind stable interfaces\\n- Cut polish, never clarity\\n\\n```ts\\nexport function shipScope(items: string[]) {\\n  return items.filter((item) => !item.startsWith('nice-to-have:'));\\n}\\n```\\n\\nThe key is to preserve confidence while trimming scope.",
+    "images": [
+      {
+        "src": "https://picsum.photos/seed/blog-deadline-1/1200/700",
+        "alt": "Kanban board for sprint planning"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Project Retrospective Montage",
+        "url": "https://www.youtube.com/embed/3JZ_D3ELwOQ",
+        "type": "embed"
+      }
+    ]
+  }
+]

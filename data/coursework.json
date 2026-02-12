@@ -1,0 +1,62 @@
+[
+  {
+    "id": "distributed-systems",
+    "slug": "distributed-systems-lab",
+    "course": "Distributed Systems Lab",
+    "institution": "State University",
+    "term": "Spring 2025",
+    "summary": "Designed fault-tolerant services and explored consistency tradeoffs through team labs.",
+    "topics": ["Consensus", "Replication", "Failure Recovery", "Observability"],
+    "markdown": "## Course focus\n\nThis course emphasized practical system behavior under unreliable network conditions.\n\n## Key coursework artifact\n\nOur final lab implemented a mini key-value store with leader election and replica reconciliation.\n\n## Reflection\n\nIt strengthened my ability to reason about eventual consistency and performance under failure scenarios.",
+    "images": [
+      {
+        "src": "https://picsum.photos/seed/distributed-1/1280/720",
+        "alt": "Cluster simulation dashboard"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Fault Injection Demo",
+        "url": "https://www.youtube.com/embed/5NV6Rdv1a3I",
+        "type": "embed"
+      }
+    ],
+    "codeSamples": [
+      {
+        "filename": "replica-manager.ts",
+        "language": "typescript",
+        "code": "type ReplicaState = { nodeId: string; lagMs: number };\\n\\nexport function pickPrimary(replicas: ReplicaState[]): ReplicaState | null {\\n  if (replicas.length === 0) return null;\\n  return replicas.reduce((best, next) => (next.lagMs < best.lagMs ? next : best));\\n}\\n"
+      }
+    ]
+  },
+  {
+    "id": "human-computer-interaction",
+    "slug": "hci-studio",
+    "course": "Human-Computer Interaction Studio",
+    "institution": "State University",
+    "term": "Fall 2024",
+    "summary": "Prototyped and tested interfaces with an emphasis on inclusive design and usability metrics.",
+    "topics": ["User Research", "Wireframing", "Accessibility", "Usability Testing"],
+    "markdown": "## Studio output\n\nBuilt and iterated on a campus navigation app for first-year students with low-vision accessibility requirements.\n\n## Testing\n\nRan moderated usability sessions and synthesized findings into design updates.\n\n## What changed in my process\n\nI now validate assumptions earlier and use measurable usability goals before polishing visuals.",
+    "images": [
+      {
+        "src": "https://picsum.photos/seed/hci-1/1280/720",
+        "alt": "HCI app prototype screens"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Usability Test Highlights",
+        "url": "https://www.youtube.com/embed/kJQP7kiw5Fk",
+        "type": "embed"
+      }
+    ],
+    "codeSamples": [
+      {
+        "filename": "focus-trap.ts",
+        "language": "typescript",
+        "code": "export function getFocusable(root: HTMLElement): HTMLElement[] {\\n  const selector = 'button, [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])';\\n  return Array.from(root.querySelectorAll<HTMLElement>(selector)).filter((el) => !el.hasAttribute('disabled'));\\n}\\n"
+      }
+    ]
+  }
+]

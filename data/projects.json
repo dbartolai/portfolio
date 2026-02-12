@@ -1,0 +1,92 @@
+
+
+[
+  {
+    "id": "neuron",
+    "slug": "neuron",
+    "name": "Neuron",
+    "tagline": "Instructor-scoped AI assistant platform for computer science courses.",
+    "summary": "A multi-tenant, course-aware AI assistant platform designed for higher-education classrooms, supporting instructor guardrails, grounded retrieval, and scalable streaming chat.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "asyncpg",
+      "LangGraph",
+      "Docker"
+    ],
+    "year": "2025",
+    "repoUrl": "",
+    "demoUrl": "",
+    "markdown": "## Overview\n\nNeuron is a classroom-focused AI assistant platform built to support instructor-defined teaching workflows and academic integrity. The system is designed around course boundaries and user roles so that students, instructors, and administrators interact with the same AI infrastructure through controlled and auditable paths.\n\n## Architecture and System Design\n\nAt the backend, I implemented a multi-tenant, course-scoped architecture using FastAPI and PostgreSQL with asyncpg. Each course owns its own data, retrieval context, and configuration, enabling safe reuse of infrastructure across multiple institutions and classes.\n\nThe conversational layer is implemented using LangGraph agent loops that combine retrieval, tool usage, and structured teaching flows. These loops allow instructors to define behavioral guardrails and response structure, while still supporting flexible student interactions.\n\nTo support grounded responses, I built a file ingestion and vector-store retrieval pipeline so that assistants can answer questions directly from course materials rather than relying on general knowledge.\n\n## Platform Capabilities\n\nAuthentication and authorization are implemented using JWT-based authentication and role-based access control for students, instructors, and administrators. The API exposes streaming chat endpoints and background processing pipelines for scalable inference and file processing.\n\nThe overall system is designed to operate as a reusable institutional platform rather than a single-course tool, emphasizing isolation, scalability, and instructor control.\n\n## What I Learned\n\nThis project significantly deepened my experience with multi-tenant backend design, asynchronous database access patterns, and agent-oriented orchestration. It also forced careful trade-offs between real-time UX, retrieval latency, and strict permission boundaries in an educational setting.",
+    "images": [],
+    "videos": [],
+    "codeSamples": []
+  },
+  {
+    "id": "ceria",
+    "slug": "ceria",
+    "name": "Ceria",
+    "tagline": "Modular personal and academic workspace with agentic task and reflection workflows.",
+    "summary": "A modular workspace system that isolates personal, academic, and startup contexts while providing agent-driven task creation, semantic search, and mastery-focused reflection tools.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "asyncpg",
+      "LangGraph",
+      "Docker"
+    ],
+    "year": "2026",
+    "repoUrl": "",
+    "demoUrl": "",
+    "markdown": "## Overview\n\nCeria is a modular workspace platform designed to support long-term learning, reflection, and project organization across multiple personal contexts. The system separates academic, startup, and personal workspaces while maintaining a unified interaction layer.\n\n## Architecture and System Design\n\nI designed a workspace isolation model that cleanly separates data and state across contexts while still enabling a shared agent infrastructure. This allows the same agent framework to operate safely across different personal and professional domains.\n\nThe interaction layer is built around a LangGraph-powered command interface that supports agentic task creation and semantic search through a spotlight-style command bar. This enables fast navigation, retrieval, and action execution across large personal knowledge bases.\n\n## Learning and Mastery Engine\n\nA core component of Ceria is a mastery engine that tracks user performance and spaced-repetition metadata to support long-term learning. Agent workflows generate personalized journal and reflection prompts designed to promote deeper understanding rather than surface-level recall.\n\nThese workflows combine user history, performance signals, and contextual retrieval to produce structured, goal-driven reflection sessions.\n\n## What I Learned\n\nCeria strengthened my ability to design agent-oriented systems that operate over long-lived personal data, and to reason about isolation boundaries, personalization, and workflow orchestration in learning-centric applications.",
+    "images": [],
+    "videos": [],
+    "codeSamples": []
+  },
+  {
+    "id": "riscv-os",
+    "slug": "riscv-operating-system",
+    "name": "RISC-V Operating System",
+    "tagline": "Multi-process educational operating system built in C and RISC-V assembly.",
+    "summary": "A teaching operating system implementing process management, a filesystem, and user-level utilities on a RISC-V architecture.",
+    "stack": [
+      "C",
+      "RISC-V Assembly",
+      "QEMU",
+      "Git"
+    ],
+    "year": "2025",
+    "repoUrl": "",
+    "demoUrl": "",
+    "markdown": "## Overview\n\nThis project involved designing and implementing a multi-process operating system kernel targeting the RISC-V architecture. The goal was to build a complete, testable kernel that supports core operating-system abstractions and user-level interaction.\n\n## Kernel and Subsystem Design\n\nI implemented a multi-process execution model, system call interface, and a read/write filesystem with an integrated block cache. The filesystem supports persistent storage and efficient block reuse, and is exercised through user-level tools.\n\nIn addition to kernel services, I built a user-level shell and file utilities for directory listing and file inspection, enabling realistic interaction with the system.\n\n## Testing and Collaboration\n\nCorrectness was validated through structured testing of kernel services and filesystem behavior. The project was completed in a three-person team using Git-based collaboration workflows.\n\n## What I Learned\n\nThis project strengthened my understanding of low-level systems programming, memory and I/O abstractions, and the tight coupling between kernel design and user-level tooling. It also reinforced disciplined debugging practices in constrained, low-visibility execution environments.",
+    "images": [],
+    "videos": [],
+    "codeSamples": []
+  },
+  {
+    "id": "ml-library",
+    "slug": "ml-library-from-scratch",
+    "name": "Machine Learning Library (From Scratch)",
+    "tagline": "NumPy-only machine learning and gradient-boosted tree library.",
+    "summary": "A custom machine learning library implementing regression models and gradient-boosted trees using only NumPy, evaluated on real sports datasets.",
+    "stack": [
+      "Python",
+      "NumPy",
+      "Machine Learning",
+      "XGBoost (inspiration)"
+    ],
+    "year": "2025",
+    "repoUrl": "",
+    "demoUrl": "",
+    "markdown": "## Overview\n\nThis project focused on building a machine learning library entirely from scratch using only NumPy, with the goal of deeply understanding model optimization and learning dynamics.\n\n## Implemented Models\n\nI implemented linear regression and logistic regression models without relying on external ML frameworks. Training, loss computation, and optimization routines were implemented directly on top of NumPy operations.\n\nBeyond basic models, I designed and implemented a custom gradient-boosted decision tree algorithm inspired by XGBoost, including tree construction and boosting logic.\n\n## Evaluation and Data\n\nThe models were evaluated using decades of historical NBA and NFL game data. Performance was analyzed not only using standard predictive metrics, but also through expected-value evaluation against historical betting lines.\n\nThis framing allowed the project to connect classical supervised learning performance with real-world decision-making utility.\n\n## What I Learned\n\nBuilding learning algorithms from first principles significantly improved my intuition for optimization, bias–variance trade-offs, and ensemble behavior. It also reinforced the importance of data quality and feature design when deploying predictive systems in noisy, real-world domains.",
+    "images": [],
+    "videos": [],
+    "codeSamples": []
+  }
+]
