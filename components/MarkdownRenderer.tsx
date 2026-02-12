@@ -17,6 +17,9 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           h3: ({ children }) => <h3 className="mt-6 font-serif text-2xl text-foreground">{children}</h3>,
           p: ({ children }) => <p className="font-sans text-base leading-7 text-foreground/85">{children}</p>,
           li: ({ children }) => <li className="font-sans leading-7 text-foreground/85">{children}</li>,
+          ul: ({ children }) => <ul className="list-disc list-inside font-sans leading-7 text-foreground/85 ">{children}</ul>,
+          ol: ({ children }) => <ol className="list-decimal list-inside font-sans leading-7 text-foreground/85">{children}</ol>,
+          hr: ({ children }) => <hr className="my-4 border-foreground/10" />,
           code: ({ children, className }) => {
             const language = className?.replace("language-", "") ?? "typescript";
             const code = String(children).replace(/\n$/, "");
