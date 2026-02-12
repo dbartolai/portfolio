@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { blogPosts, projects } from "@/lib/content";
+import  headshot from "@/public/headshot.jpeg";
 
 export default function Home() {
   const featuredProject = projects[0];
@@ -8,8 +9,8 @@ export default function Home() {
 
   return (
     <PageShell>
-      <section className="grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-2xl border border-foreground/10 bg-card p-8">
+      <section className="grid gap-8 md:grid-cols-[1.5fr_0.5fr] ">
+        <div className="rounded-2xl border border-foreground/10 bg-card p-8 h-min">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent-foreground">
             Developer Portfolio
           </p>
@@ -37,26 +38,8 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="rounded-2xl border border-foreground/10 bg-card p-6">
-          <h2 className="font-serif text-2xl">Explore</h2>
-          <ul className="mt-4 space-y-2">
-            {[
-              ["Work Experience", "/work"],
-              ["Technical Projects", "/projects"],
-              ["Relevant Coursework", "/coursework"],
-              ["Blog", "/blog"],
-            ].map(([label, href]) => (
-              <li key={href}>
-                <Link
-                  href={href}
-                  className="inline-flex w-full items-center justify-between rounded-lg px-3 py-2 font-sans text-foreground/85 transition hover:bg-accent hover:text-accent-foreground"
-                >
-                  {label}
-                  <span className="font-mono text-xs">→</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <aside className="rounded-2xl border border-foreground/10 bg-card p-4 flex justify-center items-center">
+          <img src={headshot.src} alt="Drake Bartolai" className=" object-cover rounded-2xl border-2 border-foreground/10 " />
         </aside>
       </section>
 
