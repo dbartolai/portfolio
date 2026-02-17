@@ -34,6 +34,31 @@
           "code": "type StreamMessage = { channel: string; payload: unknown };\\n\\nexport function connectStream(url: string, onMessage: (msg: StreamMessage) => void) {\\n  const socket = new WebSocket(url);\\n\\n  socket.addEventListener('message', (event) => {\\n    const parsed = JSON.parse(event.data) as StreamMessage;\\n    onMessage(parsed);\\n  });\\n\\n  return () => socket.close();\\n}\\n"
         }
       ]
-    }
+    },
+      {
+    "id": "ceria",
+    "slug": "ceria",
+    "name": "Ceria",
+    "tagline": "Modular personal and academic workspace with agentic task and reflection workflows.",
+    "summary": "A modular workspace system that isolates personal, academic, and startup contexts while providing agent-driven task creation, semantic search, and mastery-focused reflection tools.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "asyncpg",
+      "LangGraph",
+      "Docker"
+    ],
+    "year": "2026",
+    "repoUrl": "",
+    "demoUrl": "",
+    "markdown": "## Overview\n\nCeria is a modular workspace platform designed to support long-term learning, reflection, and project organization across multiple personal contexts. The system separates academic, startup, and personal workspaces while maintaining a unified interaction layer.\n\n## Architecture and System Design\n\nI designed a workspace isolation model that cleanly separates data and state across contexts while still enabling a shared agent infrastructure. This allows the same agent framework to operate safely across different personal and professional domains.\n\nThe interaction layer is built around a LangGraph-powered command interface that supports agentic task creation and semantic search through a spotlight-style command bar. This enables fast navigation, retrieval, and action execution across large personal knowledge bases.\n\n## Learning and Mastery Engine\n\nA core component of Ceria is a mastery engine that tracks user performance and spaced-repetition metadata to support long-term learning. Agent workflows generate personalized journal and reflection prompts designed to promote deeper understanding rather than surface-level recall.\n\nThese workflows combine user history, performance signals, and contextual retrieval to produce structured, goal-driven reflection sessions.\n\n## What I Learned\n\nCeria strengthened my ability to design agent-oriented systems that operate over long-lived personal data, and to reason about isolation boundaries, personalization, and workflow orchestration in learning-centric applications.",
+    "images": [],
+    "videos": [],
+    "codeSamples": []
+  }
+
     
   ]
