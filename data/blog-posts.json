@@ -1,2 +1,18 @@
 [
+  {
+    "id": "chess-begin",
+    "slug": "chess-begin",
+    "title": "Starting my Chess Engine",
+    "excerpt": "The beginnings of my handcrafted chess engine. No AI help or copying.",
+    "publishedAt": "2026-02-17",
+    "readTime": "5 min read",
+    "tags": [
+      "Ideas",
+      "Learning"
+    ],
+    "coverImage": "https://unsplash.com/photos/selective-focus-photography-of-chess-pieces-G1yhU1Ej-9A",
+    "markdown": "### Intro:\n---\nI had this *brilliant* idea for an application that handles all of my life for me\n\n\nIt should be able to:\n- Have different *spaces* for all of my needs\n- Each space should contain tasks for me\n- Each space can be like a separate learning zone, with spaced repetition learning activities\n- I could also have a space for a project, which should let me store passwords and break down tasks\n\n### Core feature:\n---\nA big thing for me is balancing my physical journal with digital task apps. I decided that ceria will incorporate both into one system. At the end of each day, I can create a *specialized journal prompt* to internalize everything I've learned/accomplished that day.\n\n### Agent:\n---\nThis application will have an AI agent that works through all of your spaces, inspired by Arc browser or spotlight search. A floating bar will allow you to interface with everything, everywhere.\n\n### Tutoring:\n---\nAs a long-time educator, I really want to embed features that help me with that work as well. Each space will allow users to add mentors/instructors, who will be able to access your own guided learning plan. They can assign specific activities, view your progress, and deliver directed lessons.",
+    "images": [],
+    "videos": []
+  }
 ]
