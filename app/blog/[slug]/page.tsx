@@ -49,10 +49,10 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
         <MarkdownRenderer content={post.markdown} />
       </section>
 
-      <section className="mt-10">
+      {(post.images || post.videos) && <section className="mt-10">
         <h2 className="mb-4 font-serif text-3xl">Photos & Video</h2>
         <MediaGallery images={post.images} videos={post.videos} />
-      </section>
+      </section>}
     </PageShell>
   );
 }
