@@ -1,5 +1,21 @@
 [
   {
+    "id": "chess-day1",
+    "slug": "chess-day1",
+    "title": "Chess Engine Day 1 Recap",
+    "excerpt": "Day 1 of my handcrafted chess engine. No AI help or copying.",
+    "publishedAt": "2026-02-17",
+    "readTime": "5 min read",
+    "tags": [
+      "Progress",
+      "Chess"
+    ],
+    "coverImage": "https://unsplash.com/photos/selective-focus-photography-of-chess-pieces-G1yhU1Ej-9A",
+    "markdown": "### Recap:\n---\nEach day I work on this project I want to provide a little snapshot of my progress. Eventually I'll maybe start recording videos but it's hard at school with a roommate.\n\nFind the code for my Day 1 commit [here](https://github.com/dbartolai/chess/commit/e49a4b208cc43322da63d6791497e7074a9ad49b)\n\n### Brief Documentation:\n---\nToday I got started with two classes, `ChessGame` and `ChessMove`. \n\n`ChessMove` – A pydantic BaseModel I use to parse algebraic notation for chess moves into information I can use/store.\n- I'm not entirely sure how useful this will be, but I know I will need it to some degree.\n- Searches chess notation moves for the move number, the piece, square, check/mate, ...\n- Init function just accepts the move notation and the color that moved\n- Allows my board abstraction in `ChessGame` to interface with the notation\n\n`ChessGame` – Stores all of the data for an individual game\n- A board is initialized as a 2d numpy array with different `int` for the pieces. Black is negative.\n- Store a history of the moves as an array of `ChessMove` objects\n- Keeps status of checking rights on both sides\n- I created function declarations for move validation but they aren't done at all yet\n\n`main` – used for testing pretty much today\n\n### Thoughts:\n---\nI'm happy with my progress so far. As I develop, I'm keeping the idea of scaling this to an actual api in the back of my mind. It's important that everything is modular and clean; logic needs to be separated wherever possible. I think the logic for parsing chess notation into data I can use will prove super useful.\n\nThe core functionality for the game that I really need seems to be:\n- Move validation\n- Board storage\n- Notation parsing\n\nOnce those are complete, I will have an intereface for chess games that the computer *should* be able to understand. That's my first goal, and we can go for there.",
+    "images": [],
+    "videos": []
+  },
+  {
     "id": "chess-begin",
     "slug": "chess-begin",
     "title": "Starting my Chess Engine",
