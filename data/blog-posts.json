@@ -1,5 +1,21 @@
 [
   {
+    "id": "chess-day2",
+    "slug": "chess-day2",
+    "title": "Chess Engine Day 2 Recap",
+    "excerpt": "Day 2 of my handcrafted chess engine. No AI help or copying.",
+    "publishedAt": "2026-02-18",
+    "readTime": "5 min read",
+    "tags": [
+      "Progress",
+      "Chess"
+    ],
+    "coverImage": "https://unsplash.com/photos/selective-focus-photography-of-chess-pieces-G1yhU1Ej-9A",
+    "markdown": "### Recap:\n---\n\nFind the code for my Day 2 commit [here](https://github.com/dbartolai/chess/commit/941c05d4a196860ffc026e31951e71b613959602)\n\n### Brief Documentation:\n---\nToday I finished the move parsing in my `ChessMove` class!\n\n\n`ChessMove` – A pydantic BaseModel I use to parse algebraic notation for chess moves into information I can use/store.\n- I'm not entirely sure how useful this will be, but I know I will need it to some degree.\n- Searches chess notation moves for the move number, the piece, square, check/mate, ...\n- Init function just accepts the move notation and the color that moved\n- Allows my board abstraction in `ChessGame` to interface with the notation\n\n\nThe actual init function for this class is complete. It accepts the chess notation for the move, and the color that moved. As a result, it completely fills out my pydantic model with a ton of data about the move that I should be able to use for move validation, board manipulation, etc. Basically, I have a chess language that both the computer and humans can understand.",
+    "images": [],
+    "videos": []
+  },
+  {
     "id": "chess-day1",
     "slug": "chess-day1",
     "title": "Chess Engine Day 1 Recap",
