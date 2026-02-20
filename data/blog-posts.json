@@ -1,5 +1,21 @@
 [
   {
+    "id": "chess-day3",
+    "slug": "chess-day3",
+    "title": "Chess Engine Day 3 Recap",
+    "excerpt": "Day 3 of my handcrafted chess engine. No AI help or copying.",
+    "publishedAt": "2026-02-19",
+    "readTime": "5 min read",
+    "tags": [
+      "Progress",
+      "Chess"
+    ],
+    "coverImage": "https://unsplash.com/photos/selective-focus-photography-of-chess-pieces-G1yhU1Ej-9A",
+    "markdown": "### Recap:\n---\n\nFind the code for my Day 2 commit [here](https://github.com/dbartolai/chess/commit/d2447954140e63897eea7e00e5451b23ddd742fd)\n\n\n### Progress:\n---\nToday I finished pawn move validation in my `ChessGame` class!\n\n\n`validate_pawn_move(self, move: ChessMove) -> bool` – A function that takes in a `ChessMove` object and analyzes the validity of a pawn move.\n- The goal is to have a move validation function for each piece type so I can just use simple case branching logic to validate moves\n- After validating that the move can actually happen on the board, I plan to create a deep copy of the board with the movement to ensure we don't move into check\n- Following a successful validation, I'll replace `self.board` with the updated board based on the move\n\n\nThis is a great step in the right direction towards validating moves. Once I can successfully validate that moves work, I can actually have 2-player functionality.\n\n\n### Next Steps:\n---\n- I need to finish a `validate_xxxxx_move()` function for each piece\n- There also has to be a function that takes in the new board and validates that the player doesn't move into check\n- Down the line, I think I can simplify user input to not require super strict chess notation. A natural language chess game could be really neat.",
+    "images": [],
+    "videos": []
+  },
+  {
     "id": "chess-day2",
     "slug": "chess-day2",
     "title": "Chess Engine Day 2 Recap",
